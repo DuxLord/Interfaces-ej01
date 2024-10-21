@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EntrenaPersonal.MainPage"
+             BackgroundColor="#E0E0E0">
+    <ScrollView>
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Label Text="Entrenador Personal"
+               FontSize="24"
+               HorizontalOptions="Center"
+               TextColor="#4A0072"/>
+
+        <Label Text="18:05"
+               FontSize="16"
+               HorizontalOptions="End"
+               TextColor="#4A0072"/>
+
+        <Image Source="dotnet_bot.png" 
+               HeightRequest="200" 
+               HorizontalOptions="Center"/>
+
+        <Entry Placeholder="Usuario" 
+               PlaceholderColor="Black" 
+               TextColor="#000000"/>
+
+        <Entry Placeholder="Contraseña" 
+               IsPassword="True" 
+               PlaceholderColor="Black" 
+               TextColor="#000000"/>
+        
+            <HorizontalStackLayout>
+                <CheckBox IsChecked="True" 
+                          Color="White"/>
+
+                <Label Text="Recuerda"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    TextColor="Black"/>
+            </HorizontalStackLayout>
+        
+        <Button Text="Iniciar Sesión" 
+                BackgroundColor="#4A0072" 
+                TextColor="#FFFFFF"
+                Margin="100,0,100,0"/>
+
+        <Button Text="Olvidaste la contraseña?" 
+                BackgroundColor="#E0E0E0" 
+                TextColor="#4A0072" 
+                HorizontalOptions="Center"
+                Margin="100,0,100,0"/>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <ImageButton Source="facebook_icon.png" HeightRequest="30" Margin="0,0,10,0"/>
+            <ImageButton Source="twitch_icon.png" HeightRequest="30" Margin="0,0,10,0"/>
+            <ImageButton Source="linkedin_icon.png" HeightRequest="30" Margin="0,0,10,0"/>
+            <ImageButton Source="whatsapp_icon.png" HeightRequest="30" />
+        </HorizontalStackLayout>
+        
+        
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
